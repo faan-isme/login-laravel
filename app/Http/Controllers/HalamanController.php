@@ -9,4 +9,7 @@ class HalamanController extends Controller
     function index(){
         return view("halaman/index");
     }
+    function home(){
+        return view("halaman/home");
+    }
 }
