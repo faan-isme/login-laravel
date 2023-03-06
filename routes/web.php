@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\SessionController;
 use App\Http\Controllers\HalamanController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HalamanController::class, 'index']);
+Route::get('/', [SessionController::class, 'index']);
+Route::post('/login', [SessionController::class, 'login']);
 Route::get('/home', [HalamanController::class, 'home']);
